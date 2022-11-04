@@ -8,7 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{4E3E2C82-5047-40C4-990C-0B52316594BE}"
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
+		..\NuGet.Config = ..\NuGet.Config
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otus.Alg.ProblemSolver.App", "Otus.Alg.ProblemSolver.App\Otus.Alg.ProblemSolver.App.csproj", "{84EE1CE3-5E19-4785-9550-32D529BA1066}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{22AC18B0-FDE0-45B0-AC34-4A6FC8404D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22AC18B0-FDE0-45B0-AC34-4A6FC8404D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22AC18B0-FDE0-45B0-AC34-4A6FC8404D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EE1CE3-5E19-4785-9550-32D529BA1066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EE1CE3-5E19-4785-9550-32D529BA1066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EE1CE3-5E19-4785-9550-32D529BA1066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EE1CE3-5E19-4785-9550-32D529BA1066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
