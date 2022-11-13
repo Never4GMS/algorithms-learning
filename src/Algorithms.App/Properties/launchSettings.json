@@ -8,21 +8,17 @@
       "commandName": "Project",
       "commandLineArgs": "--list flat"
     },
-    "M1L3_Power [junior]": {
+    "M1L3_Power": {
       "commandName": "Project",
-      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Power* --allCategories junior"
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Power*"
     },
-    "M1L3_Power [middle]": {
+    "M1L3_Fibonacci": {
       "commandName": "Project",
-      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Power* --allCategories middle"
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Fibonacci*"
     },
-    "M1L3_Fibonacci [junior]": {
+    "M1L3_Prime": {
       "commandName": "Project",
-      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Fibonacci* --allCategories junior"
-    },
-    "M1L3_Prime [junior]": {
-      "commandName": "Project",
-      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Prime* --allCategories junior"
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Prime*"
     }
   }
 }

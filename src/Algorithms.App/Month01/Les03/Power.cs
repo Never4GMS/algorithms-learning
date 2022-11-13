@@ -2,10 +2,10 @@
 
 [Problem(1, 3, "Power")]
 [TestPassColumn]
-[BenchmarkCategory(Level.Junior)]
-public class PowerJunior : BaseProblemBenchmark<PowerInput, SingleDoubleOutput, double>
+[BenchmarkCategory(Level.Junior, Level.Middle)]
+public class Power : BaseProblemBenchmark<PowerInput, SingleDoubleOutput, double>
 {
-    public PowerJunior()
+    public Power()
     {
         TestLimit = 9;
     }
@@ -27,21 +27,10 @@ public class PowerJunior : BaseProblemBenchmark<PowerInput, SingleDoubleOutput, 
 
         return RunAsync(input, output, Algorithm, DefaultThreshold);
     }
-}
 
-[Problem(1, 3, "Power")]
-[TestPassColumn]
-[BenchmarkCategory(Level.Middle)]
-public class PowerMiddle : BaseProblemBenchmark<PowerInput, SingleDoubleOutput, double>
-{
-    public PowerMiddle()
-    {
-        TestLimit = 10;
-    }
-
-    [Benchmark(Baseline = true)]
+    [Benchmark]
     [ArgumentsSource(nameof(Cases))]
-    public Task<double> Iterative(PowerInput input, SingleDoubleOutput output)
+    public Task<double> Div2(PowerInput input, SingleDoubleOutput output)
     {
         static double Algorithm(PowerInput input)
         {

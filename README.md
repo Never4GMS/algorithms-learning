@@ -3,4 +3,6 @@
 # Results
 ## Month #01
 ### Lesson #03
-1. Power Junior [Power Junior](/results/month01/lesson03/power_junior/report.md)
++ Power [Power](/results/month01/lesson03/power/README.md)
++ Fibonacci [Fibonacci](/results/month01/lesson03/fibonacci/README.md)
++ Prime [Prime](/results/month01/lesson03/prime/README.md)
