@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "List tree": {
+      "commandName": "Project",
+      "commandLineArgs": "--list tree"
+    },
+    "List flat": {
+      "commandName": "Project",
+      "commandLineArgs": "--list flat"
+    },
+    "M1L3_Power [junior]": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Power* --allCategories junior"
+    },
+    "M1L3_Power [middle]": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Power* --allCategories middle"
+    },
+    "M1L3_Fibonacci [junior]": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Fibonacci* --allCategories junior"
+    },
+    "M1L3_Prime [junior]": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Prime* --allCategories junior"
+    }
+  }
+}

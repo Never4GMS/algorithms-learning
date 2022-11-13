@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>$(MSBuildProjectName.Replace(" ", "_").Replace(".App", ""))</RootNamespace>        
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="..\..\data\**" LinkBase="data">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Algorithms.Data\Algorithms.Data.csproj" />
+    </ItemGroup>
+
+</Project>

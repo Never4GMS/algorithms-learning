@@ -1,0 +1,11 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Numerics;
+global using Algorithms.Data;
+global using BenchmarkDotNet.Attributes;
+global using BenchmarkDotNet.Configs;
+global using BenchmarkDotNet.Jobs;
+global using BenchmarkDotNet.Running;
+global using BenchmarkDotNet.Engines;
+global using BenchmarkDotNet.Toolchains.InProcess.Emit;
