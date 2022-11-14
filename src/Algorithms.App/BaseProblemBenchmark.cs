@@ -82,6 +82,6 @@ public abstract class BaseProblemBenchmark<TInput, TOutput, TResult>
         {
         }
 
-        return default(TResult);
+        return expected.Result;
     }
 }

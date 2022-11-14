@@ -17,7 +17,7 @@ public class TestPassColumn : BaseTestResultColumn
 
     public static readonly TestPassColumn Default = new();
 
-    protected override string GetValue(ITestResult result) => result.Success.ToString();
+    protected override string GetValue(ITestResult result) => result?.Success.ToString() ?? bool.FalseString;
 }
 
 public class TestResultColumn : BaseTestResultColumn
@@ -28,5 +28,5 @@ public class TestResultColumn : BaseTestResultColumn
 
     public static readonly TestResultColumn Default = new();
 
-    protected override string GetValue(ITestResult result) => result.Result;
+    protected override string GetValue(ITestResult result) => result?.GetResult()?.ToString() ?? "-";
 }
