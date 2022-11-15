@@ -40,4 +40,37 @@ public class PrimeJunior : BaseProblemBenchmark<PrimeInput, SingleUlongOutput, u
 
         return true;
     }
+
+    [Benchmark]
+    [ArgumentsSource(nameof(Cases))]
+    public Task<ulong> SieveOfEratosthenes(PrimeInput input, SingleUlongOutput output)
+    {
+        static ulong Algorithm(PrimeInput input)
+        {
+            var full = 0xffffffffffffffff;
+            var is_prime = new ulong[(input.N / 64) + 1];
+            Array.Fill(is_prime, 0xffffffffffffffff);
+            ulong count = 0;
+            for (ulong i = 2; i <= input.N; i++)
+            {
+                var s = (ushort)(i % 64);
+                var bit = 1ul << s;
+                if ((is_prime[i / 64] & bit) == bit)
+                {
+                    for (ulong j = 2 * i; j <= input.N; j += i)
+                    {
+                        s = (ushort)(j % 64);
+                        bit = 1ul << s;
+                        is_prime[j / 64] &= (full ^ bit);
+                    }
+
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+        return RunAsync(input, output, Algorithm, DefaultThreshold);
+    }
 }
