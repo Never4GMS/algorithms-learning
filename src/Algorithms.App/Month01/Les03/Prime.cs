@@ -1,7 +1,7 @@
 ﻿namespace Algorithms.Month01.Les03;
 
 [Problem(1, 3, "Primes")]
-[TestPassColumn]
+[TestColumn]
 [BenchmarkCategory(Level.Junior)]
 public class PrimeJunior : BaseProblemBenchmark<PrimeInput, SingleUlongOutput, ulong>
 {

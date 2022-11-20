@@ -19,6 +19,10 @@
     "M1L3_Prime": {
       "commandName": "Project",
       "commandLineArgs": "--job short --filter Algorithms.Month01.Les03.Prime*"
+    },
+    "M1L4_Arrays": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les04.Arrays*"
     }
   }
 }

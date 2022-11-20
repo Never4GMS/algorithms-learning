@@ -1,7 +1,7 @@
 ﻿namespace Algorithms.Month01.Les03;
 
 [Problem(1, 3, "Power")]
-[TestPassColumn]
+[TestColumn]
 [BenchmarkCategory(Level.Junior, Level.Middle)]
 public class Power : BaseProblemBenchmark<PowerInput, SingleDoubleOutput, double>
 {

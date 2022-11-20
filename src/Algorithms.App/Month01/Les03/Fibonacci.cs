@@ -1,7 +1,7 @@
 ﻿namespace Algorithms.Month01.Les03;
 
 [Problem(1, 3, "Fibo")]
-[TestPassColumn]
+[TestColumn]
 [BenchmarkCategory(Level.Junior)]
 public class Fibonacci : BaseProblemBenchmark<FibonacciInput, BigIntegerOutput, BigInteger>
 {

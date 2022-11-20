@@ -3,9 +3,9 @@ using BenchmarkDotNet.Reports;
 
 namespace Algorithms;
 
-public abstract class BaseTestResultColumn : IColumn
+public abstract class BaseCustomInputColumn<T> : IColumn
 {
-    public BaseTestResultColumn(string id, string name, string defaultValue)
+    public BaseCustomInputColumn(string id, string name, string defaultValue)
     {
         Id = id;
         ColumnName = name;
@@ -34,7 +34,7 @@ public abstract class BaseTestResultColumn : IColumn
         {
             foreach (var param in benchmarkCase.Parameters.Items)
             {
-                if (param.Value is ITestResult result)
+                if (param.Value is T result)
                 {
                     return GetValue(result);
                 }
@@ -47,7 +47,7 @@ public abstract class BaseTestResultColumn : IColumn
         return _defaultValue;
     }
 
-    protected abstract string GetValue(ITestResult result);
+    protected abstract string GetValue(T result);
 
     private string _defaultValue;
 

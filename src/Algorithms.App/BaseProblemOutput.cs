@@ -16,7 +16,9 @@ public abstract class BaseProblemOutput<T> : BaseData, IEquatable<T>, ITestResul
         Result = input;
     }
 
-    public override string ToString() => Value?.ToString() ?? "-";
+    public override string ToString() => Describe(Value);
 
-    public object GetResult() => Result;
+    protected virtual string Describe(T value) => value?.ToString() ?? "-";
+
+    public object GetResult() => Describe(Result);
 }

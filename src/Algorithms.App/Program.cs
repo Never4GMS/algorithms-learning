@@ -4,7 +4,7 @@
 
 static IConfig GetGlobalConfig() =>
     (IsDebug() ? new DebugBuildConfig() : DefaultConfig.Instance)
-        .AddJob(Job.Default
+        .AddJob(Job.Dry
             .RunOncePerIteration()
             .WithWarmupCount(0)
             .WithIterationTime(Perfolizer.Horology.TimeInterval.Millisecond * 500)
