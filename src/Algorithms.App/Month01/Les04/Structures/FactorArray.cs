@@ -8,6 +8,10 @@ public class FactorArray<T> : BaseArray<T>
     {
     }
 
+    public FactorArray(int factor) : this(factor, () => new T[factor])
+    {
+    }
+
     public FactorArray(T[] values) : this(50, () => values)
     {
         _size = values.Length;
@@ -23,5 +27,22 @@ public class FactorArray<T> : BaseArray<T>
         var array = new T[_array.Length + _array.Length * _factor / 100];
         _array.CopyTo(array, 0);
         _array = array;
+    }
+
+    public void UpdateAt(int index, T value)
+    {
+        _array[index] = value;
+    }
+
+    public void AddOrUpdate(int index, T value)
+    {
+        if (index == _size)
+        {
+            Add(value);
+        }
+        else
+        {
+            UpdateAt(index, value);
+        }
     }
 }

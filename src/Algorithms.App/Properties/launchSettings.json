@@ -23,6 +23,10 @@
     "M1L4_Arrays": {
       "commandName": "Project",
       "commandLineArgs": "--job short --filter Algorithms.Month01.Les04.Arrays*"
+    },
+    "M1L4_Queue": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les04.Queue*"
     }
   }
 }
