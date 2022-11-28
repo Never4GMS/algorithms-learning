@@ -27,6 +27,10 @@
     "M1L4_Queue": {
       "commandName": "Project",
       "commandLineArgs": "--job short --filter Algorithms.Month01.Les04.Queue*"
+    },
+    "M1L5_ChessMoves": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les05.ChessMoves*"
     }
   }
 }
