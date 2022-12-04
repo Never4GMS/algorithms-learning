@@ -31,6 +31,10 @@
     "M1L5_ChessMoves": {
       "commandName": "Project",
       "commandLineArgs": "--job short --filter Algorithms.Month01.Les05.ChessMoves*"
+    },
+    "M1L6_Sort": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les06.Sorting*"
     }
   }
 }
