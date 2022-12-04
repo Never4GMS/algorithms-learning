@@ -35,6 +35,10 @@
     "M1L6_Sort": {
       "commandName": "Project",
       "commandLineArgs": "--job short --filter Algorithms.Month01.Les06.Sorting*"
+    },
+    "M1L7_Sort": {
+      "commandName": "Project",
+      "commandLineArgs": "--job short --filter Algorithms.Month01.Les07.Sorting*"
     }
   }
 }
