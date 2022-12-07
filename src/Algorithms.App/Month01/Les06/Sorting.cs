@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Month01.Les06
+﻿using Algorithms.Sorting;
+
+namespace Algorithms.Month01.Les06
 {
     public class Sorting
     {

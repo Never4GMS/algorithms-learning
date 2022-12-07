@@ -1,6 +1,6 @@
 ﻿using Algorithms.Sorting;
 
-namespace Algorithms.Month01.Les07
+namespace Algorithms.Month01.Les08
 {
     public class Sorting
     {
@@ -26,9 +26,9 @@ namespace Algorithms.Month01.Les07
         public void ArraySortDotnet() => Array.Sort(_array);
 
         [Benchmark]
-        public void SelectSort() => _array.SelectSort();
+        public void QuickSort() => _array.QuickSort();
 
         [Benchmark]
-        public void HeapSort() => _array.HeapSort();
+        public void MeargeSort() => _array.MeargeSort();
     }
 }
